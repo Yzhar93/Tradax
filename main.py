@@ -1,7 +1,7 @@
-from Tradax.bot.stock_fetcher import get_top_stocks
-from Tradax.bot.message_builder import build_message
-from Tradax.bot.telegram_client import send_telegram_message
-from Tradax.bot.llm_integration import enhance_message  # optional
+from tradax.bot.stock_fetcher import get_top_stocks
+from tradax.bot.message_builder import build_message
+from tradax.bot.telegram_client import send_telegram_message
+from tradax.bot.llm_integration import enhance_message  # optional
 
 def stock_summary(event, context):
     stocks = get_top_stocks()
